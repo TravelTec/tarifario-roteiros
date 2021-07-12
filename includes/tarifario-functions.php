@@ -896,16 +896,16 @@
 
                 wp_enqueue_style( 
                     'font_awesome_site', 
-                    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css',
+                    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'
                 );  
 
                 wp_enqueue_style( 
                     'daterangepicker-tarifario', 
-                    'https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css',
+                    'https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css'
                 );  
                 wp_enqueue_script( 
                     'bootstrap-script',
-                    'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',
+                    'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'
                     array( 'jquery' )
                 ); 
             }
