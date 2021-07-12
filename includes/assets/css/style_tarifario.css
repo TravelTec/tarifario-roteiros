@@ -1,0 +1,148 @@
+body{
+	font-family: 'Lato', 'Nunito', 'Open Sans', sans-serif;
+}
+
+table, table *{
+    border-color: transparent !important;
+}
+
+table td, table th{
+    padding: 7px !important;
+}
+
+#content {
+    background: url('https://pompturprovisori1.websiteseguro.com/wp-content/uploads/2021/06/bg-content.png') right top no-repeat #FFF;
+    border-bottom: solid 7px #FFF;
+    padding: 30px 0;
+        max-width: 100% !important;
+    width: 100% !important;
+}
+
+#content div.entry-contents {
+    padding: 20px 0;
+}
+
+#content div.entry-contents p.title-section {
+    font-size: 15px;
+    text-align: left;
+    text-transform: none;
+    font-family: 'Lato', 'Nunito', 'Open Sans', sans-serif;
+}
+
+#content div.tarifario div.tarifa {
+    clear: both;
+    padding: 10px 0;
+}
+
+#content div.tarifario div.tarifa a {
+    color: #149348;
+}
+
+#content div.entry-contents p {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+#content div.tarifario div.tarifa table {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+#content div.tarifario div.tarifa table td.left {
+    text-align: left !important;
+}
+
+#content div.tarifario div.tarifa table small {
+    font-size: 11px;
+    line-height: 15px;
+    display: block;
+}
+
+#content div.tarifario div.tarifa table strong {
+    font-weight: bold;
+}
+
+.qty .count, .qty_qts .count, .qty_pax .count, .qty_adt .count_adt, .qty_chd .count_chd, .qty_inf .count_inf {
+    color: #139247;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 0;
+    min-width: 15px;
+    text-align: center;
+    width: 29px;
+    border-radius: 0;
+    border-top: 1px solid #139247;
+    border-bottom: 1px solid #139247;
+    border-left: transparent;
+    border-right: transparent;
+    height: 32px;
+}
+.qty .plus, .qty_qts .plus, .qty_pax .plus, .qty_adt .plus_adt, .qty_chd .plus_chd, .qty_inf .plus_inf {
+    
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: #797979;
+    width: 28px;
+    height: 32px;
+    font: 28px/1.15 Arial,sans-serif;
+    text-align: center;
+    margin-left: -5px;
+    background-color: #fff !important;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top: 1px solid #139247;
+    border-right: 1px solid #139247;
+    border-bottom: 1px solid #139247;
+    }
+.qty .minus, .qty_qts .minus, .qty_pax .minus, .qty_adt .minus_adt, .qty_chd .minus_chd, .qty_inf .minus_inf {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: #797979;
+    width: 28px;
+    height: 32px;
+    font: 29px/1 Arial,sans-serif;
+    text-align: center;
+    background-clip: padding-box;
+    margin-right: -5px;
+    background-color: #fff !important;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-top: 1px solid #139247;
+    border-left: 1px solid #139247;
+    border-bottom: 1px solid #139247;
+} 
+.minus_adt:hover, .minus_chd:hover, .minus_inf:hover {
+    background-color: #139247 !important;
+    color: #fff !important;
+}
+.plus_adt:hover, .plus_chd:hover, .plus_inf:hover{
+    background-color: #139247 !important;
+    color: #fff !important;
+}
+/*Prevent text selection*/
+span{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+input{  
+    border: 0;
+    width: 2%;
+}
+nput::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input:disabled{
+    background-color:white;
+}
+.product-quantity{
+    display: none !important;
+}
