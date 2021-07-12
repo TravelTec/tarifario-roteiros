@@ -644,7 +644,7 @@ function send_orcamento(id, data){
             var id = data.slice(0,-1); 
             jQuery.ajax({
                 type: "POST",
-                url: "/wp-content/plugins/tarifario-tec/includes/ajax-periodo.php",
+                url: "/wp-content/plugins/tarifario-roteiros-main/includes/ajax-periodo.php",
                 data: {nome_hotel:nome_hotel, nome_apto:nome_apto, nome_regime:nome_regime, nome_pacote:nome_pacote, nome_descritivo:nome_descritivo, nome_datas:nome_datas, nome_diarias:nome_diarias, valor_subtotal:valor_subtotal, valor_taxas:valor_taxas, valor_noites_extras:valor_noites_extras, valor_total:valor_total, tipo_tarifario:tipo_tarifario}, 
                 success: function(result){ 
                     jQuery.get('/?add-to-cart=' + id +'&quantity=1', function(response) { 
@@ -784,7 +784,7 @@ function set_cotacao_aereo(){
             var id = data.slice(0,-1); 
             jQuery.ajax({
                 type: "POST",
-                url: "/wp-content/plugins/tarifario-tec/includes/ajax-periodo-aereo.php",
+                url: "/wp-content/plugins/tarifario-roteiros-main/includes/ajax-periodo-aereo.php",
                 data: {local: jQuery("#field_Origem").val()+' a '+jQuery("#field_Destino").val(), tipo: jQuery("#field_tipo").val(), data1: jQuery("#field_DataDesembarque").val(), data2: jQuery("#field_DataEmbarque").val(), pax: jQuery("#field_pessoas").val(), classe: jQuery("#field_Classe").val(), tipo_tarifario:tipo_tarifario}, 
                 success: function(result){ 
                     jQuery.get('/?add-to-cart=' + id +'&quantity=1', function(response) { 
@@ -812,7 +812,7 @@ function set_cotacao_hotel(){
             var id = data.slice(0,-1); 
             jQuery.ajax({
                 type: "POST",
-                url: "/wp-content/plugins/tarifario-tec/includes/ajax-periodo-hotel.php",
+                url: "/wp-content/plugins/tarifario-roteiros-main/includes/ajax-periodo-hotel.php",
                 data: {local: jQuery("#field_destino").val(), data1: jQuery("#field_checkin").val(), data2: jQuery("#field_checkout").val(), pax: jQuery("#field_pessoas").val(), quartos: jQuery("#field_quartos").val(), tipo_tarifario:tipo_tarifario}, 
                 success: function(result){ 
                     jQuery.get('/?add-to-cart=' + id +'&quantity=1', function(response) { 
@@ -845,7 +845,7 @@ function set_cotacao_veiculos(){
             var id = data.slice(0,-1); 
             jQuery.ajax({
                 type: "POST",
-                url: "/wp-content/plugins/tarifario-tec/includes/ajax-periodo-veiculos.php",
+                url: "/wp-content/plugins/tarifario-roteiros-main/includes/ajax-periodo-veiculos.php",
                 data: {local: jQuery("#field_retirada").val(), data1: jQuery("#field_retirar").val(), data2: jQuery("#field_entrega").val(), devolucao: devolucao, local_devolver: jQuery("#field_devolver").val(), tipo_tarifario:tipo_tarifario}, 
                 success: function(result){ 
                     jQuery.get('/?add-to-cart=' + id +'&quantity=1', function(response) { 
@@ -874,7 +874,7 @@ function set_cotacao_seguro(){
             var id = data.slice(0,-1); 
             jQuery.ajax({
                 type: "POST",
-                url: "/wp-content/plugins/tarifario-tec/includes/ajax-periodo-seguro.php",
+                url: "/wp-content/plugins/tarifario-roteiros-main/includes/ajax-periodo-seguro.php",
                 data: {local: jQuery("#field_Destino").val(), data1: jQuery("#field_ida").val(), data2: jQuery("#field_volta").val(), pax: jQuery("#field_passageiros").val(), tipo_tarifario:tipo_tarifario}, 
                 success: function(result){ 
                     jQuery.get('/?add-to-cart=' + id +'&quantity=1', function(response) { 
@@ -907,7 +907,7 @@ function set_cotacao_hotel(){
             var id = data.slice(0,-1); 
             jQuery.ajax({
                 type: "POST",
-                url: "/wp-content/plugins/tarifario-tec/includes/ajax-periodo-hotelaria.php",
+                url: "/wp-content/plugins/tarifario-roteiros-main/includes/ajax-periodo-hotelaria.php",
                 data: {local: nome_produto, tipo_tarifario:tipo_tarifario}, 
                 success: function(result){ 
                     jQuery.get('/?add-to-cart=' + id +'&quantity=1', function(response) { 
